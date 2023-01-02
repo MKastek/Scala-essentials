@@ -1,4 +1,4 @@
-package lectures
+package lectures.basic
 
 object StringOps extends App{
 
@@ -33,4 +33,11 @@ object StringOps extends App{
   val myth  = f"$name%s can eat $speed%2.2f burgers per minute"
   println(myth)
 
+  val x = 1.1f
+  //val strx = f"x%3d"
+
+  // raw-interpolators
+  println(raw"This is a \n newline")
+  val escaped = "This is a \n newline"
+  println(raw"$escaped")
 }
